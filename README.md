@@ -9,3 +9,6 @@ https://github.com/olgamalofeeva/python-project-lvl1/workflows/superlinter.yml/b
 
 asciinema game brain_even 
 https://asciinema.org/a/HfvIh54AhE1QW50Uyj1AgG2Dc
+
+asciinema game brain_calc
+https://asciinema.org/a/7f3GeP4xe4WCCjOHr4YrOZdup
