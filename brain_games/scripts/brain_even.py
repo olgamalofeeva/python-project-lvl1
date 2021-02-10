@@ -25,15 +25,15 @@ def game_description():
     random_number = randint(1, 100)
     print('Question: ' + str(random_number))
     user_answer = input("Your answer: ")
-    
+
     if random_number % 2 == 0 and user_answer == 'yes' or random_number % 2 != 0 and user_answer == 'no':
         print('Correct!') 
-
-    else: 
-        print("'{}' is wrong answer. Correct answer was '{}'.\nLet's try again, {}!".format(user_answer, , name))
+    
+    else:
+        print("'{}' is wrong answer. Correct answer was '{}'.\nLet's try again, {}!".format(user_answer, 00, name))
         exit()
-
     i += 1
+  
   print('Congratulations,{}!'.format(name))
 
 def main():
