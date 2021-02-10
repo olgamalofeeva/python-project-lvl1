@@ -12,3 +12,6 @@ https://asciinema.org/a/HfvIh54AhE1QW50Uyj1AgG2Dc
 
 asciinema game brain_calc
 https://asciinema.org/a/7f3GeP4xe4WCCjOHr4YrOZdup
+
+asciinema game brain_gc
+https://asciinema.org/a/VsVVZ3Zu3cZQ8MuaiT7uuKzug
