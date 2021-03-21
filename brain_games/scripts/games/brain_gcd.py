@@ -15,7 +15,7 @@ def counts():
         RANDOM_NUMBER_FIRST = randint(1, 100)
         RANDOM_NUMBER_SECOND = randint(1, 100)
 
-        QUESTION = str(RANDOM_NUMBER_FIRST) + ' ' + str(RANDOM_NUMBER_SECOND
+        QUESTION = str(RANDOM_NUMBER_FIRST) + ' ' + str(RANDOM_NUMBER_SECOND)
 
         #Задаем переменную correct_answer
         brain_games.scripts.module.correct_answer = str(gcd(RANDOM_NUMBER_FIRST, RANDOM_NUMBER_SECOND))
