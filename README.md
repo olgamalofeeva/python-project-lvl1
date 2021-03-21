@@ -11,7 +11,13 @@ asciinema game brain_even
 https://asciinema.org/a/HfvIh54AhE1QW50Uyj1AgG2Dc
 
 asciinema game brain_calc
-https://asciinema.org/a/7f3GeP4xe4WCCjOHr4YrOZdup
+https://asciinema.org/a/5OvRC1p85880IIREwWz3tm4DR
 
-asciinema game brain_gc
-https://asciinema.org/a/VsVVZ3Zu3cZQ8MuaiT7uuKzug
+asciinema game brain_progression
+https://asciinema.org/a/kdu4T2vajIbEIm93FFlK40CQV
+
+asciinema game brain_prime
+ttps://asciinema.org/a/WQdpgooKIUud11NNYu0XcPgxi
+
+asciinema game brain_gcd
+https://asciinema.org/a/Ejiaaf7zBetqK2WLPtBADosa7
