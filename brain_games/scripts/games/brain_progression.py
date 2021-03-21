@@ -14,7 +14,7 @@ def counts():
         START = random.randint(1, 10)
         STEP = random.randint(1, 5)
         LIMIT = random.randint(6, 10)
-        MISSED_NUMBER = random.randint(1, 5)
+        MISSED_NUMBER = random.randint(0, 5)
 
         RANGE_NUMBERS = [i for i in range(START, START + STEP * LIMIT, STEP)]
         RANGE_NUMBERS[MISSED_NUMBER] = '...'
