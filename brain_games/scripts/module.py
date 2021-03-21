@@ -35,5 +35,5 @@ def checked_user_answer(user_answer):
         quit()
 
 def congratulate(name):
-    print('Congratulations,{}!'.format(name))
+    print('Congratulations, {}!'.format(name))
 
