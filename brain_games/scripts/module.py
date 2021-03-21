@@ -32,9 +32,8 @@ def checked_user_answer(user_answer):
     
     else:
         print("'{}' is wrong answer. Correct answer was '{}'.\nLet's try again, {}!".format(user_answer, correct_answer, name))
-        # quit()
+        quit()
 
-def congratulate(user_answer):
-    if user_answer == correct_answer:
-        print('Congratulations, {}!'.format(name))
+def congratulate(name):
+    print('Congratulations, {}!'.format(name))
 
