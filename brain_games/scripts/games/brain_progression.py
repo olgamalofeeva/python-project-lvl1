@@ -17,7 +17,7 @@ def counts():
         MISSED_NUMBER = random.randint(1, 5)
 
         RANGE_NUMBERS = [i for i in range(START, START + STEP * LIMIT, STEP)]
-        RANGE_NUMBERS[MISSED_NUMBER] = '...'
+        RANGE_NUMBERS[MISSED_NUMBER] = '..'
 
         PROGRESSION = ' '.join(map(str, RANGE_NUMBERS))
 
