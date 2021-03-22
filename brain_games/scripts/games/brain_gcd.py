@@ -4,7 +4,8 @@ from random import randint
 from math import gcd
 
 # Описание правил игры
-brain_games.scripts.module.describe_rules('Find the greatest common divisor of given numbers.')
+brain_games.scripts.module.describe_rules('Find the greatest '
+                                          'common divisor of given numbers.')
 
 
 # Счетчик
@@ -18,7 +19,8 @@ def counts():
         QUESTION = str(RANDOM_NUMBER_FIRST) + ' ' + str(RANDOM_NUMBER_SECOND)
 
         # Задаем переменную correct_answer
-        brain_games.scripts.module.correct_answer = str(gcd(RANDOM_NUMBER_FIRST, RANDOM_NUMBER_SECOND))
+        brain_games.scripts.module.correct_answer = str(gcd(RANDOM_NUMBER_FIRST,
+                                                        RANDOM_NUMBER_SECOND))
 
         # Вопрос игроку
         brain_games.scripts.module.ask_question(QUESTION)

@@ -5,7 +5,8 @@ import operator
 
 
 # Описание правил игры
-brain_games.scripts.module.describe_rules('What is the result of the expression?')
+brain_games.scripts.module.describe_rules('What is the result of the '
+                                          'expression?')
 
 
 # Счетчик
@@ -16,13 +17,16 @@ def counts():
         RANDOM_NUMBER_FIRST = random.randint(50, 100)
         RANDOM_NUMBER_SECOND = random.randint(1, 50)
 
-        OPERATORS = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
+        OPERATORS = [('+', operator.add), ('-', operator.sub),
+                     ('*', operator.mul)]
         picked_operator, fn = random.choice(OPERATORS)
 
-        QUESTION = '{} {} {}'.format(RANDOM_NUMBER_FIRST, picked_operator, RANDOM_NUMBER_SECOND)
+        QUESTION = '{} {} {}'.format(RANDOM_NUMBER_FIRST, picked_operator,
+                                     RANDOM_NUMBER_SECOND)
 
         # Задаем значение переменной correct_answer
-        brain_games.scripts.module.correct_answer = str(fn(RANDOM_NUMBER_FIRST, RANDOM_NUMBER_SECOND))
+        brain_games.scripts.module.correct_answer = str(fn(RANDOM_NUMBER_FIRST,
+                                                        RANDOM_NUMBER_SECOND))
 
         # Вопрос игроку
         brain_games.scripts.module.ask_question(QUESTION)

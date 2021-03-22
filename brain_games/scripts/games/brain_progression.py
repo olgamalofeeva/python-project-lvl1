@@ -3,7 +3,8 @@ import brain_games.scripts.module
 import random
 
 # Описание правил игры
-brain_games.scripts.module.describe_rules('What number is missing in the progression?')
+brain_games.scripts.module.describe_rules('What number '
+                                          'is missing in the progression?')
 
 
 # Счетчик
@@ -22,7 +23,9 @@ def counts():
         PROGRESSION = ' '.join(map(str, RANGE_NUMBERS))
 
         # Задаем значение переменной correct_answer
-        brain_games.scripts.module.correct_answer = str(RANGE_NUMBERS[MISSED_NUMBER - 1] + STEP)
+        brain_games.scripts.module.correct_answer = str(RANGE_NUMBERS
+                                                        [MISSED_NUMBER - 1] +
+                                                        + STEP)
 
         # Вопрос игроку
         brain_games.scripts.module.ask_question(PROGRESSION)

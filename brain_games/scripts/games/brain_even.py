@@ -3,7 +3,9 @@ import brain_games.scripts.module
 from random import randint
 
 # Описание правил игры
-brain_games.scripts.module.describe_rules('Answer "yes" if the number is even, otherwise answer "no".')
+brain_games.scripts.module.describe_rules('Answer "yes" if '
+                                          'the number is even, '
+                                          'otherwise answer "no".')
 
 
 # Счетчик

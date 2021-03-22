@@ -3,7 +3,9 @@ import brain_games.scripts.module
 from random import randint
 
 # Описание правил игры
-brain_games.scripts.module.describe_rules('Answer "yes" if given number is prime. Otherwise answer "no".')
+brain_games.scripts.module.describe_rules('Answer "yes" if given '
+                                          'number is prime. '
+                                          'Otherwise answer "no".')
 
 
 # Счетчик
