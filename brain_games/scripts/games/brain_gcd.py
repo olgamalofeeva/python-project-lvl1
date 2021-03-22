@@ -1,13 +1,13 @@
 #!/usr/bin/env python
-import prompt
 import brain_games.scripts.module
 from random import randint
-from math import gcd 
+from math import gcd
 
-#Описание правил игры
+# Описание правил игры
 brain_games.scripts.module.describe_rules('Find the greatest common divisor of given numbers.')
 
-#Счетчик
+
+# Счетчик
 def counts():
     i = 1
 
@@ -17,20 +17,20 @@ def counts():
 
         QUESTION = str(RANDOM_NUMBER_FIRST) + ' ' + str(RANDOM_NUMBER_SECOND)
 
-        #Задаем переменную correct_answer
+        # Задаем переменную correct_answer
         brain_games.scripts.module.correct_answer = str(gcd(RANDOM_NUMBER_FIRST, RANDOM_NUMBER_SECOND))
 
-        #Вопрос игроку
+        # Вопрос игроку
         brain_games.scripts.module.ask_question(QUESTION)
-        
-        #Поле для ввода ответа
+
+        # Поле для ввода ответа
         user_answer = input("Your answer: ")
 
-        #Проверка правильности ответа
+        # Проверка правильности ответа
         brain_games.scripts.module.checked_user_answer(user_answer)
 
         i += 1
-  
+
     brain_games.scripts.module.congratulate(brain_games.scripts.module.name)
 
 

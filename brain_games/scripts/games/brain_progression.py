@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-import prompt
 import brain_games.scripts.module
 import random
 
-#Описание правил игры
+# Описание правил игры
 brain_games.scripts.module.describe_rules('What number is missing in the progression?')
 
-#Счетчик
+
+# Счетчик
 def counts():
     i = 1
 
@@ -20,21 +20,21 @@ def counts():
         RANGE_NUMBERS[MISSED_NUMBER] = '...'
 
         PROGRESSION = ' '.join(map(str, RANGE_NUMBERS))
-        
-        #Задаем значение переменной correct_answer
+
+        # Задаем значение переменной correct_answer
         brain_games.scripts.module.correct_answer = str(RANGE_NUMBERS[MISSED_NUMBER - 1] + STEP)
 
-        #Вопрос игроку
+        # Вопрос игроку
         brain_games.scripts.module.ask_question(PROGRESSION)
 
-        #Поле для ввода ответа
+        # Поле для ввода ответа
         user_answer = input("Your answer: ")
 
-        #Проверка правильности ответа
+        # Проверка правильности ответа
         brain_games.scripts.module.checked_user_answer(user_answer)
 
         i += 1
-  
+
     brain_games.scripts.module.congratulate(brain_games.scripts.module.name)
 
 

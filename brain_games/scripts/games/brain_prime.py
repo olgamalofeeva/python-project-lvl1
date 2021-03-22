@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-import prompt
 import brain_games.scripts.module
 from random import randint
 
-#Описание правил игры
+# Описание правил игры
 brain_games.scripts.module.describe_rules('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-#Счетчик
+
+# Счетчик
 def counts():
     i = 1
 
@@ -14,14 +14,14 @@ def counts():
 
         RANDOM_NUMBER = randint(1, 100)
 
-        #Задаем переменную correct_answer
+        # Задаем переменную correct_answer
         brain_games.scripts.module.correct_answer = ' '
-            
-        #Проверка на простое ли это число
+
+        # Проверка на простое ли это число
         def сhecked_prime(n):
             def isPrime(n):
                 d = 2
-                while n % d != 0:          
+                while n % d != 0:
                     d += 1
                 return d == n
 
@@ -29,20 +29,20 @@ def counts():
                 return 'yes'
             return 'no'
 
-        #Задаем значение переменной correct_answer
+        # Задаем значение переменной correct_answer
         brain_games.scripts.module.correct_answer = сhecked_prime(RANDOM_NUMBER)
 
-        #Вопрос игроку
+        # Вопрос игроку
         brain_games.scripts.module.ask_question(RANDOM_NUMBER)
-            
-        #Поле для ввода ответа
+
+        # Поле для ввода ответа
         user_answer = input("Your answer: ")
 
-        #Проверка правильности ответа
+        # Проверка правильности ответа
         brain_games.scripts.module.checked_user_answer(user_answer)
-        
+
         i += 1
-  
+
     brain_games.scripts.module.congratulate(brain_games.scripts.module.name)
 
 
