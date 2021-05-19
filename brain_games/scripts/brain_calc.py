@@ -10,7 +10,7 @@ brain_games.engine.describe_game('What is the result of the expression?')
 
 # Счетчик
 def counts():
-    ROUNDS_COUNT = 3
+    ROUNDS_COUNT = 4
     i = 1
 
     while i <= ROUNDS_COUNT:
